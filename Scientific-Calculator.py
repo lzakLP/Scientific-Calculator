@@ -33,6 +33,10 @@ def return_to_menu():
         if option == 0:
             break
 
+def invalid_option():
+    print("Error: Invalid option.")
+    return_to_menu()
+
 
 history = []
 running = True
@@ -128,4 +132,4 @@ while running:
 
     else:
         print("Error: Invalid option.")
-        return_to_menu()
+        invalid_option()
