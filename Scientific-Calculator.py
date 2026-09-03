@@ -17,6 +17,13 @@ def divide(a, b):
     total = a / b
     return total
 
+def power(a, b):
+    total = a ** b
+    return total
+
+def square_root(a):
+    total = math.sqrt(a)
+    return total   
 
 def add_to_history(history, operation):
     if len(history) == 5:
@@ -50,6 +57,9 @@ while running:
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
+    print("4. Divide")
+    print("5. Power")
+    print("4. Divide")
     print("4. Divide")
     print("0. History")
     print("11. Exit")
@@ -105,6 +115,29 @@ while running:
             print("Error: Division by zero.")
 
         return_to_menu()
+
+    elif option == 5:
+
+        a = float(input("First number:"))
+        b = float(input("Second number:"))
+
+        result = power(a, b)
+        print(f"{result:.2f}")
+        add_to_history(history, f"{a} ^ {b} = {result:.2f}")
+
+        return_to_menu()
+        
+    elif option == 6:
+
+       a = int(input("Insert Number:"))
+      
+       result = square_root(a)
+
+       print(f"{result:.2f}")
+
+       add_to_history(history, f"√{a} = {result:.2f}")
+
+       return_to_menu()
 
     elif option == 11:
         running = False
