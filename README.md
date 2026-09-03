@@ -4,26 +4,53 @@ A simple scientific calculator developed in **Python** as a learning and develop
 
 ## Version
 
-**V.01 — Initial Version**
+**V.02 — Complete System**
 
-The current version implements the four basic mathematical operations:
+The current version implements the complete initial system, including ten mathematical operations:
 
 - Addition
 - Subtraction
 - Multiplication
 - Division
+- Power
+- Square Root
+- Percentage
+- Sine
+- Cosine
+- Tangent
+
+The calculator also includes:
+
+- Calculation history with a limit of five operations
+- History navigation
+- Menu navigation
+- Input handling for numerical values
+- Results displayed with two decimal places
+- Division by zero handling
+- Invalid option handling
+- Return-to-menu functionality
+- Exit option
 
 ## Project Goal
 
-This project was created with the goal of progressively developing a complete scientific calculator while improving programming skills, logical thinking, and code organization.
+This project was created with the goal of progressively developing a scientific calculator while improving programming skills, logical thinking, problem-solving, and code organization.
 
-The current version represents the initial foundation of the project.
+This version represents the completion of the calculator's initial functional structure.
 
-### Future Development
+## Future Development
 
-The next versions are planned to include **six additional mathematical operations**, expanding the calculator's capabilities and bringing it closer to a complete scientific calculator.
+With the complete initial system implemented, future projects will focus less on adding basic mathematical functionality and more on improving the quality and usability of the applications.
 
-The project will evolve gradually as new concepts and features are implemented.
+The next projects will place greater emphasis on:
+
+- Design and user interface
+- User experience
+- Input validation
+- Error handling and correction
+- Code refinement and organization
+- More robust application behavior
+
+The projects will progressively introduce new programming concepts while maintaining a focus on practical development and continuous improvement.
 
 ## Technologies
 
@@ -31,6 +58,8 @@ The project will evolve gradually as new concepts and features are implemented.
 
 ## Status
 
-**In development — V.01**
+**V.01 - Completed**
+**V.02 - Completed**
+**V.03 - In Development**
 
-This project is part of my ongoing programming learning journey.
+This project is part of my ongoing programming learning journey and serves as a foundation for future development projects.
