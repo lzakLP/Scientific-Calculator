@@ -2,16 +2,13 @@ def add(a, b):
     total = a + b
     return total
 
-
 def subtract(a, b):
     total = a - b
     return total
 
-
 def multiply(a, b):
     total = a * b
     return total
-
 
 def divide(a, b):
     total = a / b
@@ -24,6 +21,24 @@ def power(a, b):
 def square_root(a):
     total = math.sqrt(a)
     return total   
+    
+def percentage(a, b):
+    total = a * b / 100
+    return total
+    
+def sine(a):
+    total = math.sin(math.radians(a))
+    return total
+    
+def cosine(a):
+    total = math.cos(math.radians(a))
+    return total
+
+def tangent(a):
+    total = math.tan(math.radians(a))
+    return total
+
+
 
 def add_to_history(history, operation):
     if len(history) == 5:
@@ -48,6 +63,8 @@ def invalid_option():
 history = []
 running = True
 
+import math 
+
 while running:
 
     # Menu
@@ -59,8 +76,11 @@ while running:
     print("3. Multiply")
     print("4. Divide")
     print("5. Power")
-    print("4. Divide")
-    print("4. Divide")
+    print("6. Square Root")
+    print("7. percentage")
+    print("8. Sine")
+    print("9. Cosine")
+    print("10.Tangent")
     print("0. History")
     print("11. Exit")
     print("========================")
@@ -136,6 +156,55 @@ while running:
        print(f"{result:.2f}")
 
        add_to_history(history, f"√{a} = {result:.2f}")
+
+       return_to_menu()
+       
+    elif option == 7:
+
+       a = int(input("Insert Number:"))
+       b = int(input("Insert Number:"))
+      
+       result = percentage(a, b)
+
+       print(f"{result:.2f}")
+
+       add_to_history(history, f"{a}% of {b} = {result:.2f}")
+
+       return_to_menu()
+       
+    elif option == 8:
+
+       a = float(input("Insert Number:"))
+      
+       result = sine(a)
+
+       print(f"{result:.2f}")
+
+       add_to_history(history, f" sin({a}°) = {result:.2f}")
+
+       return_to_menu()
+       
+    elif option == 9:
+
+       a = float(input("Insert Number:"))
+      
+       result = cosine(a)
+
+       print(f"{result:.2f}")
+
+       add_to_history(history, f" cos({a}°) = {result:.2f}")
+
+       return_to_menu()
+      
+    elif option == 10:
+
+       a = float(input("Insert Number:"))
+      
+       result = tangent(a)
+
+       print(f"{result:.2f}")
+
+       add_to_history(history, f" tan({a}°) = {result:.2f}")
 
        return_to_menu()
 
