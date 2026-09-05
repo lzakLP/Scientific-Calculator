@@ -38,14 +38,11 @@ def tangent(a):
     total = math.tan(math.radians(a))
     return total
 
-
-
 def add_to_history(history, operation):
     if len(history) == 5:
         history.pop(0)
 
     history.append(operation)
-
 
 def return_to_menu():
     while True:
